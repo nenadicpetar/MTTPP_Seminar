@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllTestsSuite">
+    <test name="Google Search">
+        <classes>
+            <class name="Pretraživanje"/>
+        </classes>
+    </test>
+    <test name="Registration">
+        <classes>
+            <class name="Registracija"/>
+        </classes>
+    </test>
+    <test name="Login">
+        <classes>
+            <class name="Login"/>
+        </classes>
+    </test>
+    <test name="Shopping Cart">
+        <classes>
+            <class name="Košarica"/>
+        </classes>
+    </test>
+    <test name="Narudžba">
+        <classes>
+            <class name="Potvrda"/>
+        </classes>
+    </test>
+    <test name="Password">
+        <classes>
+            <class name="Lozinka"></class>
+        </classes>
+    </test>
+</suite>

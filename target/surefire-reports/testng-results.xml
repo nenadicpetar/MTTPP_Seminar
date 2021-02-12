@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-12T13:55:58Z" name="AllTestsSuite" finished-at="2021-02-12T13:58:24Z" duration-ms="145916">
+    <groups>
+    </groups>
+    <test started-at="2021-02-12T13:55:58Z" name="Google Search" finished-at="2021-02-12T13:56:17Z" duration-ms="18992">
+      <class name="Pretraživanje">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Pretraživanje@55ca8de8]" started-at="2021-02-12T13:55:59Z" name="setupTest" finished-at="2021-02-12T13:56:05Z" duration-ms="6888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="googleSearchTest()[pri:0, instance:Pretraživanje@55ca8de8]" started-at="2021-02-12T13:56:05Z" name="googleSearchTest" finished-at="2021-02-12T13:56:16Z" duration-ms="10936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Pretraživanje@55ca8de8]" started-at="2021-02-12T13:56:16Z" name="teardownTest" finished-at="2021-02-12T13:56:17Z" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Pretraživanje -->
+    </test> <!-- Google Search -->
+    <test started-at="2021-02-12T13:56:18Z" name="Registration" finished-at="2021-02-12T13:56:41Z" duration-ms="23141">
+      <class name="Registracija">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Registracija@143640d5]" started-at="2021-02-12T13:56:18Z" name="setupTest" finished-at="2021-02-12T13:56:24Z" duration-ms="6686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="registration()[pri:0, instance:Registracija@143640d5]" started-at="2021-02-12T13:56:24Z" name="registration" finished-at="2021-02-12T13:56:40Z" duration-ms="15533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Registracija@143640d5]" started-at="2021-02-12T13:56:40Z" name="teardownTest" finished-at="2021-02-12T13:56:41Z" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Registracija -->
+    </test> <!-- Registration -->
+    <test started-at="2021-02-12T13:56:41Z" name="Login" finished-at="2021-02-12T13:57:03Z" duration-ms="22277">
+      <class name="Login">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Login@2aa5fe93]" started-at="2021-02-12T13:56:41Z" name="setupTest" finished-at="2021-02-12T13:56:46Z" duration-ms="4879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="login()[pri:0, instance:Login@2aa5fe93]" started-at="2021-02-12T13:56:46Z" name="login" finished-at="2021-02-12T13:57:02Z" duration-ms="16515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Login@2aa5fe93]" started-at="2021-02-12T13:57:02Z" name="teardownTest" finished-at="2021-02-12T13:57:03Z" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Login -->
+    </test> <!-- Login -->
+    <test started-at="2021-02-12T13:57:03Z" name="Shopping Cart" finished-at="2021-02-12T13:57:32Z" duration-ms="29487">
+      <class name="Košarica">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Košarica@37e547da]" started-at="2021-02-12T13:57:03Z" name="setupTest" finished-at="2021-02-12T13:57:08Z" duration-ms="4798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="addToCart()[pri:0, instance:Košarica@37e547da]" started-at="2021-02-12T13:57:08Z" name="addToCart" finished-at="2021-02-12T13:57:31Z" duration-ms="23639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Košarica@37e547da]" started-at="2021-02-12T13:57:31Z" name="teardownTest" finished-at="2021-02-12T13:57:32Z" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Košarica -->
+    </test> <!-- Shopping Cart -->
+    <test started-at="2021-02-12T13:57:32Z" name="Narudžba" finished-at="2021-02-12T13:58:04Z" duration-ms="31139">
+      <class name="Potvrda">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Potvrda@45dd4eda]" started-at="2021-02-12T13:57:33Z" name="setupTest" finished-at="2021-02-12T13:57:38Z" duration-ms="5000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="ShoppingCart()[pri:0, instance:Potvrda@45dd4eda]" started-at="2021-02-12T13:57:38Z" name="ShoppingCart" finished-at="2021-02-12T13:58:03Z" duration-ms="25245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShoppingCart -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Potvrda@45dd4eda]" started-at="2021-02-12T13:58:03Z" name="teardownTest" finished-at="2021-02-12T13:58:04Z" duration-ms="889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Potvrda -->
+    </test> <!-- Narudžba -->
+    <test started-at="2021-02-12T13:58:04Z" name="Password" finished-at="2021-02-12T13:58:24Z" duration-ms="20735">
+      <class name="Lozinka">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Lozinka@fdefd3f]" started-at="2021-02-12T13:58:04Z" name="setupTest" finished-at="2021-02-12T13:58:09Z" duration-ms="4878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Password()[pri:0, instance:Lozinka@fdefd3f]" started-at="2021-02-12T13:58:09Z" name="Password" finished-at="2021-02-12T13:58:23Z" duration-ms="14358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Password -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Lozinka@fdefd3f]" started-at="2021-02-12T13:58:23Z" name="teardownTest" finished-at="2021-02-12T13:58:24Z" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- Lozinka -->
+    </test> <!-- Password -->
+  </suite> <!-- AllTestsSuite -->
+</testng-results>
