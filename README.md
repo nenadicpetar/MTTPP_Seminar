@@ -49,8 +49,8 @@ Izvođenje vježbe:
     
 //POM.xml
 
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -111,66 +111,66 @@ Naziv testne klase također može biti proizvoljan. (Primjer: Pretrazivanje.java
 
 
 
-// Pretrazivanje.java      
-// Test za pretraživanje na Google-u
+    // Pretrazivanje.java      
+    // Test za pretraživanje na Google-u
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.opera.OperaDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+    import org.openqa.selenium.By;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.WebElement;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    import org.openqa.selenium.firefox.FirefoxDriver;
+    import org.openqa.selenium.opera.OperaDriver;
+    import org.testng.Assert;
+    import org.testng.annotations.AfterMethod;
+    import org.testng.annotations.BeforeMethod;
+    import org.testng.annotations.Test;
 
-import java.util.List;
+    import java.util.List;
 
-public class Pretrazivanje {
-    //-----------------------------------Global Variables-----------------------------------
-    //Declare a Webdriver variable
-    public WebDriver driver;
-    //Declare a test URL variable
-    public String testURL = "http://www.google.com";
-    //-----------------------------------Test Setup-----------------------------------
-    @BeforeMethod
-    public void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C:/Drivers/chromedriver.exe");
-        //Create a new ChromeDriver
-        driver = new ChromeDriver();
+    public class Pretrazivanje {
+        //-----------------------------------Global Variables-----------------------------------
+        //Declare a Webdriver variable
+        public WebDriver driver;
+        //Declare a test URL variable
+        public String testURL = "http://www.google.com";
+        //-----------------------------------Test Setup-----------------------------------
+        @BeforeMethod
+        public void setupTest() {
+            System.setProperty("webdriver.chrome.driver", "C:/Drivers/chromedriver.exe");
+            //Create a new ChromeDriver
+            driver = new ChromeDriver();
 
-        //System.setProperty("webdriver.gecko.driver", "C:/Drivers/geckodriver.exe");
-        //Create new FirefoxDriver (geckodriver.exe)
-        //driver = new FirefoxDriver();
+            //System.setProperty("webdriver.gecko.driver", "C:/Drivers/geckodriver.exe");
+            //Create new FirefoxDriver (geckodriver.exe)
+            //driver = new FirefoxDriver();
 
-        //System.setProperty("webdriver.opera.driver", "C:/Drivers/operadriver.exe");
-        //Create new OperaDriver (operadriver.exe)
-        //driver = new OperaDriver();
+            //System.setProperty("webdriver.opera.driver", "C:/Drivers/operadriver.exe");
+            //Create new OperaDriver (operadriver.exe)
+            //driver = new OperaDriver();
 
-        //Go to page from testURL
-        driver.navigate().to(testURL);
+            //Go to page from testURL
+            driver.navigate().to(testURL);
+        }
+        @Test
+        public void googleSearchTest() throws InterruptedException {
+            WebElement searchTextBox = driver.findElement(By.name("q"));
+            searchTextBox.sendKeys("demowebshop");
+            searchTextBox.submit();
+            Thread.sleep(3000);
+            WebElement testLink = driver.findElement(By.xpath("/html/body/div[7]/div[2]/div[9]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div/div[1]/a/h3/span"));
+            Assert.assertEquals(testLink.getText(), "Demowebshop - Tricentis");
+            System.out.print(testLink.getText());
+
+            Thread.sleep(5000);
+
+        }
+        //-----------------------------------Test TearDown-----------------------------------
+        @AfterMethod
+        public void teardownTest() {
+            //Close browser and end the session
+            driver.quit();
+        }
     }
-    @Test
-    public void googleSearchTest() throws InterruptedException {
-        WebElement searchTextBox = driver.findElement(By.name("q"));
-        searchTextBox.sendKeys("demowebshop");
-        searchTextBox.submit();
-        Thread.sleep(3000);
-        WebElement testLink = driver.findElement(By.xpath("/html/body/div[7]/div[2]/div[9]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div/div[1]/a/h3/span"));
-        Assert.assertEquals(testLink.getText(), "Demowebshop - Tricentis");
-        System.out.print(testLink.getText());
-
-        Thread.sleep(5000);
-
-    }
-    //-----------------------------------Test TearDown-----------------------------------
-    @AfterMethod
-    public void teardownTest() {
-        //Close browser and end the session
-        driver.quit();
-    }
-}
 
 
 Sada treba izgraditi projekt (Build -> Build Project). Zatim, ako se koristi IntelliJ, desnom tipkom miša kliknuti na testnu klasu i kliknuti na opciju "Create 'naziv testa'...
@@ -179,16 +179,16 @@ Nakon što se klikne na gumb "OK", u gornjem desnom kutu IntelliJ-a će biti iko
 
 Ako se želi upotrijebiti ručno konfigurirana datoteka testng.xml, treba stvoriti datoteku testng.xml unutar projektne mape i izmijeniti je kako slijedi:
 
-// testng.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AllTestsSuite">
-    <test name="Google Search">
-        <classes>
-            <class name="Pretrazivanje"/>
-        </classes>
-    </test>
-<suite>
+    // testng.xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+    <suite name="AllTestsSuite">
+        <test name="Google Search">
+            <classes>
+                <class name="Pretrazivanje"/>
+            </classes>
+        </test>
+    <suite>
   
   
 Nakon toga, desnom tipkom miša kliknuti datoteku testng.xml i pokrenuti testove pritiskom na opciju "Run"...
