@@ -36,16 +36,16 @@ Zadatak
           
 Izvođenje vježbe:
 
-    Otvoriti IntelliJ i stvoriti novi projekt klikom na File -> New->Project...
-    Odabrati Maven vrstu projekta i kliknuti Dalje (Next)
-    Ispuniti GroupId i ArtifactId, upisati po vlastitoj želji i kliknuti Dalje (Next).
-    Proizvoljno upisati naziv projekta (Project name), odabrati mapu u koju će se projekt spremiti (Project location) i kliknuti Završi (Finish).
-    Kada se projekt učita i otvori se IntelliJ alat, kliknuti na "Enable Auto-Import" (ova opcija automatski uvozi Maven ovisnosti u svoj projekt)
-    Sada treba dodati Maven ovisnosti kao što su biblioteke Selenium i TestNG. Da bi se dobile te ovisnosti, treba otići na poveznice i provjeriti trenutne verzije:
-    https://mvnrepository.com/artifact/org.testng/testng
-    https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+   Otvoriti IntelliJ i stvoriti novi projekt klikom na File -> New->Project...
+   Odabrati Maven vrstu projekta i kliknuti Dalje (Next)
+   Ispuniti GroupId i ArtifactId, upisati po vlastitoj želji i kliknuti Dalje (Next).
+   Proizvoljno upisati naziv projekta (Project name), odabrati mapu u koju će se projekt spremiti (Project location) i kliknuti Završi (Finish).
+   Kada se projekt učita i otvori se IntelliJ alat, kliknuti na "Enable Auto-Import" (ova opcija automatski uvozi Maven ovisnosti u svoj projekt)
+   Sada treba dodati Maven ovisnosti kao što su biblioteke Selenium i TestNG. Da bi se dobile te ovisnosti, treba otići na poveznice i provjeriti trenutne verzije:
+   https://mvnrepository.com/artifact/org.testng/testng
+   https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     
-    Osim toga, ako treba automatski generirati izvješća o izvršenim testovima, treba dodati odjeljak "build" te koristiti plugin maven-surefire-plugin.
+   Osim toga, ako treba automatski generirati izvješća o izvršenim testovima, treba dodati odjeljak "build" te koristiti plugin maven-surefire-plugin.
     
 //POM.xml
 
@@ -104,8 +104,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </build>
 </project>
 
-      Zatim je potrebno stvoriti testnu klasu. Da bi se stvorila testna klasa, desnom tipkom miša kliknuti na "java" mapu ispod mape "test" i odabrati New -> Java Class.
-      Naziv testne klase također može biti proizvoljan. (Primjer: Pretrazivanje.java)
+   
+   
+Zatim je potrebno stvoriti testnu klasu. Da bi se stvorila testna klasa, desnom tipkom miša kliknuti na "java" mapu ispod mape "test" i odabrati New -> Java Class.
+Naziv testne klase također može biti proizvoljan. (Primjer: Pretrazivanje.java)
+
+
 
 // Pretrazivanje.java      
 // Test za pretraživanje na Google-u
