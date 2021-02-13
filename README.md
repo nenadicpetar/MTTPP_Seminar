@@ -1,5 +1,7 @@
 # MTTPP_Seminar
 
+NAPOMENA: kod testa za potvrdu narudžbe (Potvrda.java) program se prekida kod upisivanja adrese za slanje (Shipping address) jer gumb Continue ima istu klasu kao i prethodni gumb Continue (na Billing Address), pa dolazi do greške u izvođenju. Tu sam prekinuo pisanje koda i ostavio da se testira samo do tog dijela. 
+
 Popis alata za izvođenje vježbe:
   - Development Kit: JAVA JDK (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
   - IDE: IntelliJ (https://www.jetbrains.com/idea/download/#section=windows)
