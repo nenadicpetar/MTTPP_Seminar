@@ -4,9 +4,11 @@ Popis alata za izvođenje vježbe:
   - Development Kit: JAVA JDK (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
   - IDE: IntelliJ (https://www.jetbrains.com/idea/download/#section=windows)
   - upravljački program:
-        - za Google Chrome: ChromeDriver (https://chromedriver.chromium.org/downloads)
-        - za Mozilla Firefox: GeckoDriver (https://github.com/mozilla/geckodriver/releases)
-        - za Operu: OperaDriver (https://github.com/operasoftware/operachromiumdriver/releases)
+       - za Google Chrome: ChromeDriver (https://chromedriver.chromium.org/downloads)
+        
+       - za Mozilla Firefox: GeckoDriver (https://github.com/mozilla/geckodriver/releases)
+        
+       - za Operu: OperaDriver (https://github.com/operasoftware/operachromiumdriver/releases)
 
 Redoslijed instalacije:
     - Internet preglednik (Chrome, Firefox, Opera)
@@ -37,10 +39,15 @@ Zadatak
 Izvođenje vježbe:
 
    Otvoriti IntelliJ i stvoriti novi projekt klikom na File -> New->Project...
+   
    Odabrati Maven vrstu projekta i kliknuti Dalje (Next)
+   
    Ispuniti GroupId i ArtifactId, upisati po vlastitoj želji i kliknuti Dalje (Next).
+   
    Proizvoljno upisati naziv projekta (Project name), odabrati mapu u koju će se projekt spremiti (Project location) i kliknuti Završi (Finish).
+   
    Kada se projekt učita i otvori se IntelliJ alat, kliknuti na "Enable Auto-Import" (ova opcija automatski uvozi Maven ovisnosti u svoj projekt)
+   
    Sada treba dodati Maven ovisnosti kao što su biblioteke Selenium i TestNG. Da bi se dobile te ovisnosti, treba otići na poveznice i provjeriti trenutne verzije:
    https://mvnrepository.com/artifact/org.testng/testng
    https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
